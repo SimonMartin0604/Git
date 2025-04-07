@@ -1,13 +1,35 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adatkezelő alkalmazás</title>
+</head>
+<body>
+<h1>Adatkezelő alkalmazás</h1>
+<table id="data-table">
+<thead>
+<tr>
+<th>Név</th>
+<th>Kor</th>
+<th>Város</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+ 
+  <h2>Új elem hozzáadása</h2>
+<form id="add-form">
+<label for="name">Név:</label>
+<input type="text" id="name" name="name" required />
+<label for="age">Kor:</label>
+<input type="number" id="age" name="age" required />
+<label for="city">Város:</label>
+<input type="text" id="city" name="city" required />
+<button type="submit">Hozzáad</button>
+</form>
+ 
+  <script type="module" src="/main.js"></script>
+</body>
 </html>
